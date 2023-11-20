@@ -1,0 +1,63 @@
+\usepackage{amsmath, amssymb, array}
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{changepage}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{ifdraft}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum, listings}    
+\usepackage{natbib, newunicodechar}
+\usepackage{xspace}     
+\usepackage{textcomp, threeparttable}
+\usepackage{pifont}
+\usepackage{color, colortbl}
+\usepackage{soul}% for underlines
+% \usepackage[table]{xcolor} % for cell colors
+% \usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+% \usepackage{lineno}
+%\linenumbers
+
+\newunicodechar{✓}{\ding{51}}
+\newunicodechar{✗}{\ding{55}}
+
+% \theoremstyle{definition}
+% \newtheorem{definition}{Definition}[section]
+% \theoremstyle{remark}
+% \newtheorem*{remark}{Remark}
+
+\newcolumntype{L}{>{\centering\arraybackslash}m{2cm}}
+\newcolumntype{B}{>{\arraybackslash}p{0.5\textwidth}}
+\newcolumntype{S}{>{\centering\arraybackslash}m{.5cm}}
+
+\definecolor{ivory}{rgb}{1.0, 1.0, 0.94}
+\definecolor{lightgray}{rgb}{0.88,1,1}
+
+\newcommand{\dquotes}[1]{``#1''}
+\newcommand{\nnbb}[2]{
+    \fbox{\bfseries\sffamily\scriptsize#1}
+    {\sf\small$\blacktriangleright$\textit{#2}$\blacktriangleleft$}
+}
+\newcommand{\ap}[1]{\nnbb{\textcolor{blue}{Ant}}{\textcolor{blue}{#1}\xspace}}
+\newcommand{\Oracle}[0]{Gas Oracle\xspace}
+\newcommand{\Oracles}[0]{Gas Oracles\xspace}
+\newcommand{\miro}[0]{Mir{\'{o}}\xspace}
+\newcommand{\gr}{graphical representation\xspace}
+\newcommand{\M}{Miró\xspace}
+
+\graphicspath{{figures/}}
+\definecolor{ivory}{rgb}{1.0, 1.0, 0.94}
+\lstset
+{
+    backgroundcolor = \color{ivory},
+    language=C,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+    numbersep=1em,
+    xleftmargin=2em,
+    upquote=true
+}
