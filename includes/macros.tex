@@ -44,20 +44,26 @@
 \newcommand{\gr}{graphical representation\xspace}
 \newcommand{\M}{Miró\xspace}
 
-\graphicspath{{figures/}}
-\definecolor{ivory}{rgb}{1.0, 1.0, 0.94}
-\lstset
-{
-    backgroundcolor = \color{ivory},
-    language=C,
-    basicstyle=\footnotesize,
-    numbers=left,
-    stepnumber=1,
-    showstringspaces=false,
-    tabsize=1,
-    breaklines=true,
-    breakatwhitespace=false,
-    numbersep=1em,
-    xleftmargin=2em,
-    upquote=true
+% Define a custom color scheme
+\definecolor{codebackground}{rgb}{0.75,0.99,0.99} % Light gray background
+\definecolor{codecomment}{rgb}{0.5,0.5,0.5}       % Gray for comments
+\definecolor{codekeyword}{rgb}{0,0,1}             % Blue for keywords
+\definecolor{codestring}{rgb}{0.56,0,0.1}         % Dark red for strings
+
+% Python code style configuration
+\lstdefinestyle{inferno}{
+    backgroundcolor=\color{codebackground}, % Background color
+    commentstyle=\color{codecomment},       % Comment style
+    keywordstyle=\color{codekeyword},       % Keyword style
+    stringstyle=\color{codestring},         % String style
+    basicstyle=\ttfamily\small,             % Font and size
+    breaklines=true,                        % Automatic line breaking
+    numbers=none,                           % No line numbers
+    frame=single,                           % Single-line frame
+    rulecolor=\color{gray},                 % Border color
+    showspaces=false,                       % Hide spaces
+    showstringspaces=false,                 % Hide spaces in strings
+    showtabs=false,                         % Hide tabs
+    tabsize=4,                              % Tab width
+    language=Python                         % Specify Python as the language
 }

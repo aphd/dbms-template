@@ -36,9 +36,7 @@ The dataset encompasses key features such as price, room type, person capacity, 
 The study poses the research question: "What are the factors that influence the price and location of Airbnb listings?" 
 The author postulates that the pricing is significantly influenced by the distance from the center.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[1]
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -51,140 +49,148 @@ The rise of Airbnb~\cite{andreu2020airbnb} has transformed the hospitality indus
 Understanding the determinants of pricing and location is crucial for both hosts and guests. 
 This paper explores the dataset to uncover insights into the factors shaping Airbnb prices and locations.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[2-3]
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[3-4]
+
+\lipsum[5-6]
 
 \section{Dataset Description}
-The Airbnb dataset consists of several columns, including price, room type, person capacity, host characteristics, cleanliness rating, and geographical attributes. 
+The Airbnb dataset consists of several columns, including price, room type, person capacity, host characteristics, cleanliness rating, and geographical attributes \cite{bathwal2024flightprice}. 
 These variables provide a comprehensive view of the listings and their characteristics.
-Table~\ref{tab:df-desriptiopn} \dots.
-Table~\ref{tab:df-statitistics} shows the summary statiticst of Airbnb dataset. 
+
 The mean, the median, minimum (min), the 25th, 50th, and 75th percentiles and maximum (max) are calculated for each variable shown in the table.
 
-%Please add the following packages if necessary:
-%\usepackage{booktabs, multirow} % for borders and merged ranges
-%\usepackage{soul}% for underlines
-%\usepackage[table]{xcolor} % for cell colors
-%\usepackage{changepage,threeparttable} % for wide tables
-%If the table is too wide, replace \begin{table}[!htp]...\end{table} with
-%\begin{adjustwidth}{-2.5 cm}{-2.5 cm}\centering\begin{threeparttable}[!htb]...\end{threeparttable}\end{adjustwidth}
-%Please add the following packages if necessary:
-%\usepackage{booktabs, multirow} % for borders and merged ranges
-%\usepackage{soul}% for underlines
-%\usepackage[table]{xcolor} % for cell colors
-%\usepackage{changepage,threeparttable} % for wide tables
-%If the table is too wide, replace \begin{table}[!htp]...\end{table} with
-%\begin{adjustwidth}{-2.5 cm}{-2.5 cm}\centering\begin{threeparttable}[!htb]...\end{threeparttable}\end{adjustwidth}
-\begin{table*}[!htp]\centering
-  \caption{Generated by Spread-LaTeX}\label{tab: }
-  \scriptsize
-  \begin{tabular}{lrr}\toprule
-  Name &Description \\\midrule
-  realSum &Represents the total price or sum associated with the Airbnb listing. \\
-  room\_type &Indicates the type of room, such as "Entire home/apt" or "Private room." \\
-  room\_shared &: Binary indicator (True/False) if the room is shared. \\
-  room\_private &: Binary indicator (True/False) if the room is private. \\
-  person\_capacity &: Specifies the maximum number of people the accommodation can host. \\
-  host\_is\_superhost &: Binary indicator (True/False) if the host is recognized as a superhost. \\
-  multi &: Binary indicator (True/False) if the listing is part of a multi-listing. \\
-  biz &: Binary indicator (True/False) if the listing is associated with a business. \\
-  cleanliness\_rating &: Represents the cleanliness rating of the accommodation. \\
-  guest\_satisfaction\_overall &: Represents the overall guest satisfaction rating. \\
-  bedrooms &: Specifies the number of bedrooms in the accommodation. \\
-  dist &: Represents the distance to a certain location or point of interest. \\
-  metro\_dist &: Represents the distance to a metro or subway station. \\
-  attr\_index &: Represents an attraction index, possibly related to nearby attractions. \\
-  attr\_index\_norm &: Normalized version of the attraction index. \\
-  rest\_index\_norm &rest\_index: Represents a restaurant index, possibly related to nearby restaurants. \\
-  rest\_index\_norm &rest\_index\_norm: Normalized version of the restaurant index. \\
-  lng &lng: Represents the longitude coordinate of the accommodation. \\
-  lat &lat: Represents the latitude coordinate of the accommodation. \\
-  \bottomrule
-  \end{tabular}
-\end{table*}
-
-\begin{table*}[ht]
-  \caption{Summaries of the Airbnb data-set}
+\begin{table*}[!htp]
   \centering
-  \begin{tabular}{rlllll}
-    \hline
-   &    file size (B) &    gas\_used &    bytesLength & scriptBytesLength & TPS \\ 
-    \hline
-    Min. &    370.0   &  74.00   &  834   & 526.0  & 0.00 \\ 
-    1st Qu. & 606.0   &  74.00   & 1066   & 758.0 & 48.00  \\ 
-    Median & 606.0   & 74.00   & 1066   & 758.0 & 60.00 \\ 
-    Mean &    605.2   & 77.81   & 1065   & 757.2 & 62.45 \\ 
-    3rd Qu. & 606.0   &  74.00   & 1066   & 758.0 & 80.00 \\ 
-    Max. &    606.0   & 1748.00   & 1066   & 758.0 & 180.00 \\ 
-    \hline
-    \label{tab:df-statitistics}   
-  \end{tabular}
+  \caption{Generated by Spread-LaTeX}\label{tab:spread_latex}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
+  \toprule
+  \textbf{Name} & \textbf{Description} \\
+  \midrule
+  realSum & Represents the total price or sum associated with the Airbnb listing. \\
+  room\_type & Indicates the type of room, such as "Entire home/apt" or "Private room." \\
+  room\_shared & Binary indicator (True/False) if the room is shared. \\
+  room\_private & Binary indicator (True/False) if the room is private. \\
+  person\_capacity & Specifies the maximum number of people the accommodation can host. \\
+  host\_is\_superhost & Binary indicator (True/False) if the host is recognized as a superhost. \\
+  multi & Binary indicator (True/False) if the listing is part of a multi-listing. \\
+  biz & Binary indicator (True/False) if the listing is associated with a business. \\
+  cleanliness\_rating & Represents the cleanliness rating of the accommodation. \\
+  guest\_satisfaction\_overall & Represents the overall guest satisfaction rating. \\
+  bedrooms & Specifies the number of bedrooms in the accommodation. \\
+  dist & Represents the distance to a certain location or point of interest. \\
+  metro\_dist & Represents the distance to a metro or subway station. \\
+  attr\_index & Represents an attraction index, possibly related to nearby attractions. \\
+  attr\_index\_norm & Normalized version of the attraction index. \\
+  rest\_index & Represents a restaurant index, possibly related to nearby restaurants. \\
+  rest\_index\_norm & Normalized version of the restaurant index. \\
+  lng & Represents the longitude coordinate of the accommodation. \\
+  lat & Represents the latitude coordinate of the accommodation. \\
+  \bottomrule
+  \end{tabular}%
+  }
 \end{table*}
+  
+\lipsum[1]
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 
+
+\lipsum[2-3]
 
 \section{Research Questions}
 The primary research question addressed in this study is: "What are the factors that influence the price and location of Airbnb listings?" 
 This overarching question will guide the exploration of various aspects within the dataset.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[2]
+
+This study aims to explore the patterns and relationships within the Los Angeles Airbnb dataset. Specifically, it seeks to address the following research questions:
+\begin{itemize}
+    \item \textbf{RQ\_1}: What patterns exist in the data regarding property types, pricing, and availability across different neighborhoods in Los Angeles?
+    \item \textbf{RQ\_2}: How do key variables such as price and property location interact to influence occupancy rates?
+    \item \textbf{RQ\_3}: What factors most significantly impact customer ratings and reviews, and how do they correlate with host behavior or property characteristics?
+\end{itemize}
+
+\lipsum[3]
 
 \section{Research Hypotheses}
 Based on initial observations, a hypothesis is proposed that the distance from the city center significantly influences Airbnb pricing. 
 It is hypothesized that listings closer to the center command higher prices due to factors such as proximity to attractions, events, and better infrastructure.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\begin{itemize}
+  \item \textbf{RH\_1\_0}: There are no significant patterns in the data regarding property types, pricing, and availability across different neighborhoods in Los Angeles.  
+  \item \textbf{RH\_1\_A}: Significant patterns exist in the data regarding property types, pricing, and availability across different neighborhoods in Los Angeles.  
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
- 
+  \item \textbf{RH\_2\_0}: There is no significant interaction between key variables such as price and property location in influencing occupancy rates.  
+  \item \textbf{RH\_2\_A}: Key variables such as price and property location significantly interact to influence occupancy rates.  
+
+  \item \textbf{RH\_3\_0}: Factors such as customer ratings and reviews are not significantly correlated with host behavior or property characteristics.  
+  \item \textbf{RH\_3\_A}: Factors such as customer ratings and reviews are significantly correlated with host behavior or property characteristics.  
+\end{itemize}
+
+\lipsum[2-3]
+
 \section{Results}
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[2-3]
+Table~\ref{tab:df-statitistics} shows the summary statiticst of Airbnb dataset. 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/price-vs-distance-paris.png}
+  \caption{Box plot representing the price based on the distance from the metro for the city of Paris}
+  \label{fig:box-plot-paris}
+\end{figure}
+\lipsum[1]
+
+Figure \ref{fig:fig2} \lipsum[1]
+
+\begin{table}[ht]
+  \caption{Summaries of the Airbnb data-set}
+  \centering
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{rlllll}
+    \hline
+    & file size (B) & gas\_used & bytesLength & scriptBytesLength & TPS \\ 
+    \hline
+    Min.     & 370.0   & 74.00   & 834   & 526.0  & 0.00 \\ 
+    1st Qu.  & 606.0   & 74.00   & 1066  & 758.0  & 48.00 \\ 
+    Median   & 606.0   & 74.00   & 1066  & 758.0  & 60.00 \\ 
+    Mean     & 605.2   & 77.81   & 1065  & 757.2  & 62.45 \\ 
+    3rd Qu.  & 606.0   & 74.00   & 1066  & 758.0  & 80.00 \\ 
+    Max.     & 606.0   & 1748.00 & 1066  & 758.0  & 180.00 \\ 
+    \hline
+  \end{tabular}%
+  }
+  \label{tab:df-statitistics}   
+\end{table}
 
 \begin{figure*}[ht]
   \centering
-  \includegraphics[width=.8\textwidth]{figures/price-vs-distance-paris.png}
-  \caption{Box plot representing the price based on the distance from the metro for the city of Paris}
-  \label{fig:box-plot-paris}
+  \includegraphics[width=.99\textwidth]{figures/subplot.png}
+  \caption{\lipsum[1]}
+  \label{fig:fig2}
 \end{figure*}
+\lipsum[1]
 
+Figure \ref{fig:heat-map} \lipsum[1]
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/heat-map.jpg}
+  \caption{Box plot representing the price based on the distance from the metro for the city of Paris}
+  \label{fig:heat-map}
+\end{figure}
 
 \section{Discussion}
 The discussion section will delve into the findings related to the research questions and hypotheses. 
 It will explore the correlation between distance from the center and pricing, considering potential confounding variables. 
 Additionally, it will analyze how other variables such as room type, host superhost status, and cleanliness rating impact pricing and location.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[1]
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[2]
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+\lipsum[3-4]
 
 \section{Conclusion}
 In conclusion, this research contributes valuable insights into the factors influencing Airbnb prices and locations. 
@@ -193,50 +199,50 @@ These findings can benefit both hosts and guests in making informed decisions wi
 
 This research provides a foundation for further exploration and understanding of the dynamic factors at play in the Airbnb ecosystem.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\lipsum[1]
 
+\section{authors}
+\subsection{Giuseppe Antonio Pierro}
+Giuseppe Antonio Pierro obtained his Ph.D. in Physics from the University of Bari and CERN, Geneva~\cite{cern},
+and his Ph.D. in Mathematics and Computer Science from the University of Cagliari and Inria, Lille. 
+Prior to that, \lipsum[1]
 
 \section{Appendix}
 
 The analysis on the dataset was conducted using the Python programming language~\cite{rayhanrise, van1995python} and some of its libraries. 
 The Python libraries utilized include matplotlib~\cite{Hunter:2007}, pandas, and numpy.
 
+\lipsum[2-3]
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Listing \ref{mylist2} \dots.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
-
-Listing~\ref{lst:get-txs} shows the code used to pruce the graph and data analysis . 
-
-\begin{minipage}{0.95\linewidth}
-\begin{lstlisting}[basicstyle=\tiny,language=C,frame=single,caption=JSON-RPC request to query the Diem DLT,label=lst:get-txs]
-{
-  // Request: fetches 10 transactions
-  curl -X POST -H "Content-Type: application/json" \ 
-  --data '{"jsonrpc":"2.0","method":"get_transactions", "params":[ 100000, 10, false ],"id":1}' \
-  https://testnet.diem.com/v1
-}
+\begin{lstlisting}[style=inferno, label={mylist2}, caption={Recursive Factorial Function}, linewidth=\columnwidth]
+  # This is a sample Python code
+  def greet(name):
+      """Function to greet a user"""
+      print(f"Hello, {name}!")
+  
+  names = ["Alice", "Bob", "Charlie"]
+  for name in names:
+      greet(name)
 \end{lstlisting}
-\end{minipage}
 
-\section{authors}
+\lipsum[4]
+  
 
-\subsection{Giuseppe Antonio Pierro}
-Giuseppe Antonio Pierro obtained his Ph.D. in Physics from the University of Bari and CERN, Geneva,
-and his Ph.D. in Mathematics and Computer Science from the University of Cagliari and Inria, Lille. 
-Prior to that, he served as a postdoctoral researcher at CERN, working on the "Compact Muon Solenoid" experiment. In this role, he was responsible for developing a data management system that extracted raw data from multiple sensors and converted it into comprehensible information. 
-Additionally, he has expanded his research interests to include Blockchain technology, specifically focusing on understanding the various factors that influence user behavior within the Blockchain ecosystem.
+Listing \ref{mylist3} \lipsum[1]
+\begin{lstlisting}[style=inferno , label={mylist3}, caption={Recursive Factorial Function}, linewidth=\columnwidth] 
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("ziya07/community-health-evaluation-dataset")
+
+print("Path to dataset files:", path)
+import pandas as pd
+df = pd.read_csv(path + '/community_health_evaluation_dataset.csv')
+print(df.columns)
+\end{lstlisting}
+
 
 \bibliographystyle{IEEEtran}
 \bibliography{bibliography/main}
