@@ -37,12 +37,7 @@
     \fbox{\bfseries\sffamily\scriptsize#1}
     {\sf\small$\blacktriangleright$\textit{#2}$\blacktriangleleft$}
 }
-\newcommand{\ap}[1]{\nnbb{\textcolor{blue}{Ant}}{\textcolor{blue}{#1}\xspace}}
-\newcommand{\Oracle}[0]{Gas Oracle\xspace}
-\newcommand{\Oracles}[0]{Gas Oracles\xspace}
-\newcommand{\miro}[0]{Mir{\'{o}}\xspace}
-\newcommand{\gr}{graphical representation\xspace}
-\newcommand{\M}{Miró\xspace}
+\newcommand{\todo}[1]{\nnbb{\textcolor{blue}{ToDo}}{\textcolor{blue}{#1}\xspace}\\}
 
 % Define a custom color scheme
 \definecolor{codebackground}{rgb}{0.75,0.99,0.99} % Light gray background
@@ -66,4 +61,19 @@
     showtabs=false,                         % Hide tabs
     tabsize=4,                              % Tab width
     language=Python                         % Specify Python as the language
+}
+
+\lstdefinestyle{clean}{
+  backgroundcolor=\color{gray!5},
+  basicstyle=\ttfamily\small,
+  frame=single,
+  rulecolor=\color{gray!50},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue!70!black}\bfseries,
+  commentstyle=\color{gray!70}\itshape,
+  stringstyle=\color{teal!60!black},
+  breaklines=true,
+  showstringspaces=false,
+  captionpos=b
 }

@@ -14,7 +14,7 @@
 % https://easychair.org/cfp/DLT-2022
 % \title{A comparison between \\Libra/Diem and other Blockchains}
 % \title{Comparative Study on Libra, Ethereum and Solana Blockchain}
-\title{A Study on \dots}
+\title{Your Paper Title Here \dots}
 
 \author{
     \IEEEauthorblockN{Giuseppe Antonio Pierro}
@@ -27,51 +27,55 @@
 }
 \maketitle
 
-% The Libra Blockchain, 2020-05-26.pdf
-
+%================ ABSTRACT ================
 \begin{abstract}
-% TODO the abstract should be shorter
+\todo{It should summarize the whole paper concisely while highlighting novelty and results.}
 \lipsum[1]
-
 \end{abstract}
 
+%================ KEYWORDS ================
 \begin{IEEEkeywords}
-Airbnb, location price, geographical attribute
+  \todo{List 3–5 keywords describing your work (e.g., deep learning, forecasting, metaheuristics, healthcare analytics).}
 \end{IEEEkeywords}
 
-%:================================
+%================ INTRODUCTION ================
 \section{Introduction}
-\lipsum[1]~\cite{andreu2020airbnb} 
 
-\lipsum[2-3]
-
-\lipsum[3-4]
-
-\lipsum[5-6]
-
-\section{Dataset Description}
-\lipsum[1]
-  
+\subsection{Brief motivation and context}
+\todo{Explain why this topic matters and what real-world or theoretical problem motivates your work.}
 \lipsum[1]
 
-\lipsum[2-3]
-
-\section{Research Questions}
-\lipsum[1]
-
-\lipsum[2]
-
-\lipsum[3]
-
-\section{Research Hypotheses}
-\lipsum[1]
-
-\lipsum[2-3]
-
-\section{Results}
+\subsection{Main contributions}
+\todo{List 2–4 clear, concise bullet points summarizing what this paper contributes.}
+\begin{itemize}
+  \item \todo{First contribution}
+  \item \todo{Second contribution}
+\end{itemize}
 \lipsum[1]
 
 
+
+%================ RELATED WORK ================
+\section{Related Work and Background}
+\todo{Summarize relevant prior studies and approaches. Highlight what they achieve and where they fall short. Emphasize how your method differs or improves upon them.}
+
+%================ DATASET + METHODOLOGY ================
+\section{Dataset and Methodology}
+
+\subsection{Dataset description}
+\todo{Describe the dataset(s): source, size, variables, preprocessing steps, and any relevant ethical aspects.}
+\lipsum[1]
+
+
+\subsection{Experimental setup}
+\todo{Describe tools, frameworks, model parameters, and evaluation metrics used in your experiments.}
+\lipsum[1]
+
+%================ RESULTS AND DISCUSSION ================
+\section{Results and Discussion}
+
+\subsection{Quantitative results}
+\todo{Present main results (tables, figures). Include accuracy, error, or performance metrics.}
 Figure \ref{fig:fig2} \lipsum[1]
 
 \begin{table}[ht]
@@ -103,22 +107,26 @@ Figure \ref{fig:fig2} \lipsum[1]
 \lipsum[1]
 
 
-\section{Discussion}
+\subsection{Comparison and interpretation}
+\todo{Compare with baselines or state-of-the-art methods. Discuss why your approach performs better or differently.}
 \lipsum[1]
 
-\lipsum[2]
 
-\lipsum[3-4]
-
-\section{Conclusion}
-
+%================ CONCLUSION ================
+\section{Conclusion and Future Work}
+\todo{Summarize key findings and contributions. Suggest possible future extensions or applications. Keep it concise (5–6 sentences).}
 \lipsum[1]
 
+
+%================ Authors ================
 \section{authors}
 \subsection{Antonio Pierro}
 \lipsum[1]
 
-\section{Appendix}
+%================ APPENDIX (OPTIONAL) ================
+\appendix
+\section{Supplementary Material}
+\todo{Optional: include additional tables, Code, or proofs that support your main text.}
 
 The analysis on the dataset was conducted using the Python programming language~\cite{rayhanrise, van1995python} and some of its libraries. 
 The Python libraries utilized include matplotlib~\cite{Hunter:2007}, pandas, and numpy.
@@ -127,7 +135,7 @@ The Python libraries utilized include matplotlib~\cite{Hunter:2007}, pandas, and
 
 Listing \ref{mylist2} \dots.
 
-\begin{lstlisting}[style=inferno, label={mylist2}, caption={Recursive Factorial Function}, linewidth=\columnwidth]
+\begin{lstlisting}[style=clean, label={mylist2}, caption={Recursive Factorial Function}, linewidth=\columnwidth]
   # This is a sample Python code
   def greet(name):
       """Function to greet a user"""
@@ -142,7 +150,7 @@ Listing \ref{mylist2} \dots.
   
 
 Listing \ref{mylist3} \lipsum[1]
-\begin{lstlisting}[style=inferno , label={mylist3}, caption={Recursive Factorial Function}, linewidth=\columnwidth] 
+\begin{lstlisting}[style=clean , label={mylist3}, caption={Recursive Factorial Function}, linewidth=\columnwidth] 
 import kagglehub
 
 # Download latest version

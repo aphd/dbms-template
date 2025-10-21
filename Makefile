@@ -26,10 +26,12 @@ fastTR:
 
 pdf:
 	make pdfDLT
-	make open
+	make openDLT
 open:
 	make openDLT
 
-
 pdf-authors:
 	pdflatex  $(authors).tex
+
+ss: 
+	./parse_latex_structure.sh $(fName).tex
