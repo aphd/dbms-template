@@ -26,6 +26,7 @@ fastTR:
 
 pdf:
 	make pdfDLT
+	make open
 open:
 	make openDLT
 
